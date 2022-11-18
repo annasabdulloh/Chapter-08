@@ -10,7 +10,7 @@
     "caniuse-lite": "^1.0.30001431",
     "firebase": "^9.13.0",
     "google-auth-library": "^8.6.0",
-    "react": "^18.1.0",
+    "react": "^18.0.0",
     "react-dom": "^18.1.0",
     "react-google-login": "^5.2.2",
     "react-owl-carousel": "^2.3.3",
