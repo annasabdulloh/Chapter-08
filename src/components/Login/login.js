@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import './login.css';
-import { doLoginWithGoogle } from 'react-google-login';
-import { GoogleLogin } from 'react-google-login';
+// import { doLoginWithGoogle } from 'react-google-login';
+// import { GoogleLogin } from 'react-google-login';
 
 async function doLogin(email, password) {
     const response = await fetch('http://localhost:3000/login', {
@@ -42,20 +42,20 @@ function Login() {
         }
     };
 
-    const haldleSuccessGoogle = (response) => {
-        console.log(response);
-        console.log(response.tokenId);
-        if(response.tokenId)
-        {doLoginWithGoogle(response.tokenId).then((token) => {
-            localStorage.setItem("token", token);
-            setIsLoggedIn(token);}).catch((err) => console.log(err.message)).finally(() => setIsLoading(false));}}
+    // const haldleSuccessGoogle = (response) => {
+    //     console.log(response);
+    //     console.log(response.tokenId);
+    //     if(response.tokenId)
+    //     {doLoginWithGoogle(response.tokenId).then((token) => {
+    //         localStorage.setItem("token", token);
+    //         setIsLoggedIn(token);}).catch((err) => console.log(err.message)).finally(() => setIsLoading(false));}}
 
     // console.log(email, password, token);
 
-    const haldleFailureGoogle = (response) => {
-        console.log(response);
-        alert(response);
-    }
+    // const haldleFailureGoogle = (response) => {
+    //     console.log(response);
+    //     alert(response);
+    // }
 
     return(
         <div className="form row col-12 d-flex justify-content-center">
@@ -72,7 +72,7 @@ function Login() {
                     <div className="container d-flex justify-content-center p-4">
                         <button type="submit" className="btn btn-success">Login</button>
                     </div>
-                    <div className='container d-flex justify-content-center p-1'>
+                    {/* <div className='container d-flex justify-content-center p-1'>
                             <GoogleLogin
                                 clientId = {process.env.REACT_APP_GOOGLE_CLIENT_ID}
                                 buttonText = "Login with Google"
@@ -80,7 +80,7 @@ function Login() {
                                 onFailure = {haldleFailureGoogle}
                                 cookiePolicy = {'single_host_origin'}
                             />
-                    </div>
+                    </div> */}
                 </form>
             </div>
         </div>
