@@ -1,0 +1,13 @@
+.header{
+    background-color: #f1f3ff;
+}
+
+.header-logo{
+    width: 100px;
+    height: 35px;
+    background-color: #0D28A6;
+}
+
+.caption-normal{
+    font-size: 36px;
+}

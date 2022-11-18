@@ -1,0 +1,11 @@
+.items{
+    background: #F1F3FF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin-bottom: 24px;
+    height: 270px;
+}
+
+.card-content{
+    width: 100%;
+}

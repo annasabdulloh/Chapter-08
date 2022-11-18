@@ -1,0 +1,15 @@
+.footer{
+    margin-top: 150px;
+}
+
+.footer-logo{
+    width: 100px;
+    height: 35px;
+    background-color: #0D28A6;
+}
+
+.footer-list{
+    margin-left: 30px;
+    font-weight: 500;
+    list-style: none;
+}
